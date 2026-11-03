@@ -92,11 +92,7 @@ final class AVAudioEngineCapture: MicrophoneCapturing, @unchecked Sendable {
     }
 
     static func requestPermission() async -> Bool {
-        await withCheckedContinuation { continuation in
-            AVAudioApplication.requestRecordPermission { allowed in
-                continuation.resume(returning: allowed)
-            }
-        }
+        await AVAudioApplication.requestRecordPermission()
     }
 
     private static func monoSamples(from buffer: AVAudioPCMBuffer) -> [Float]? {

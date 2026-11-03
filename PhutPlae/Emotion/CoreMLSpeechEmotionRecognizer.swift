@@ -17,22 +17,21 @@ final class CoreMLSpeechEmotionRecognizer: SpeechEmotionRecognizing, @unchecked 
 
     func prepare(progress: @escaping @Sendable (Double, String) -> Void) async throws {
         progress(0.1, "BOOT · SER emotion2vec+ seed")
-        let url: URL
+        let modelURL: URL
         if FileManager.default.fileExists(atPath: SERModelStore.compiledURL.path) {
-            url = SERModelStore.compiledURL
+            modelURL = SERModelStore.compiledURL
         } else if FileManager.default.fileExists(atPath: SERModelStore.packageURL.path) {
-            url = try MLModel.compileModel(at: SERModelStore.packageURL)
+            let compiled = try await MLModel.compileModel(at: SERModelStore.packageURL)
             try? FileManager.default.removeItem(at: SERModelStore.compiledURL)
-            try FileManager.default.copyItem(at: url, to: SERModelStore.compiledURL)
+            try FileManager.default.copyItem(at: compiled, to: SERModelStore.compiledURL)
+            modelURL = SERModelStore.compiledURL
         } else {
             throw SpeechEmotionError.modelMissing
         }
 
-        let compiled = try MLModel(contentsOf: FileManager.default.fileExists(atPath: SERModelStore.compiledURL.path)
-            ? SERModelStore.compiledURL
-            : url)
+        let loaded = try await MLModel.load(contentsOf: modelURL, configuration: MLModelConfiguration())
         lock.lock()
-        model = compiled
+        model = loaded
         ready = true
         lock.unlock()
         progress(1.0, "โหลด SER แล้ว")

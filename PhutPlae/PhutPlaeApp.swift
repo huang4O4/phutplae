@@ -3,7 +3,7 @@ import SwiftUI
 @main
 struct PhutPlaeApp: App {
     @Environment(\.scenePhase) private var scenePhase
-    @StateObject private var settings = UserSettings()
+    @StateObject private var settings: UserSettings
     @StateObject private var appState: AppState
 
     init() {

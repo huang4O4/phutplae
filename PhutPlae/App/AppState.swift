@@ -23,7 +23,7 @@ final class AppState: ObservableObject, PipelinePresenting {
 
     let settings: UserSettings
     let downloads: ModelDownloadManager
-    let pathMonitor = PathMonitor()
+    let pathMonitor: PathMonitor
 
     private var pipeline: SpeechTranslationPipeline?
     private var transcriber: SpeechTranscribing
@@ -44,10 +44,12 @@ final class AppState: ObservableObject, PipelinePresenting {
         synthesizer: SpeechSynthesizing = AVSpeechVoiceSynthesizer(),
         capture: MicrophoneCapturing = AVAudioEngineCapture()
     ) {
-        // Default arguments are nonisolated; construct MainActor types in this isolated body.
+        // Default arguments and stored-property initializers are nonisolated;
+        // construct MainActor types in this isolated body.
         let settings = settings ?? UserSettings()
         self.settings = settings
         self.downloads = downloads ?? ModelDownloadManager()
+        self.pathMonitor = PathMonitor()
         self.transcriber = transcriber
         self.translator = translator ?? PairAwareTranslator(
             policy: settings.translatorPolicy,
