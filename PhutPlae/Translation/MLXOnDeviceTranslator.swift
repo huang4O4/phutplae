@@ -77,12 +77,18 @@ final class MLXOnDeviceTranslator: TranslationServicing, @unchecked Sendable {
                 temperature: 0.25,
                 topP: 0.9
             )
-            let result = try MLXLMCommon.generate(
+            let stream = try MLXLMCommon.generate(
                 input: input,
                 parameters: parameters,
                 context: context
             )
-            return result.output
+            var output = ""
+            for await generation in stream {
+                if let chunk = generation.chunk {
+                    output += chunk
+                }
+            }
+            return output
         }
 
         return try TranslationJSONParser.parse(raw)
