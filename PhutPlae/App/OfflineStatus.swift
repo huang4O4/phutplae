@@ -21,7 +21,7 @@ enum OfflineReadiness: Equatable {
 @MainActor
 final class PathMonitor: ObservableObject {
     @Published var isSatisfied = false
-    private let monitor = NWPathMonitor()
+    nonisolated(unsafe) private let monitor = NWPathMonitor()
     private let queue = DispatchQueue(label: "phutplae.path")
 
     init() {
@@ -33,7 +33,7 @@ final class PathMonitor: ObservableObject {
         monitor.start(queue: queue)
     }
 
-    deinit {
+    nonisolated deinit {
         monitor.cancel()
     }
 }
