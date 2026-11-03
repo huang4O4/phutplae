@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		01PHUTPLAEXCODE0000001E /* Exceptions for "PhutPlae" folder in "PhutPlae" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 01PHUTPLAEXCODE00000002 /* PhutPlae */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		01PHUTPLAEXCODE00000006 /* PhutPlae */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				01PHUTPLAEXCODE0000001E /* Exceptions for "PhutPlae" folder in "PhutPlae" target */,
+			);
+			path = PhutPlae;
+			sourceTree = "<group>";
+		};
+		01PHUTPLAEXCODE00000007 /* PhutPlaeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PhutPlaeTests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01PHUTPLAEXCODE00000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01PHUTPLAEXCODE00000021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01PHUTPLAEXCODE00000004 = {
+			isa = PBXGroup;
+			children = (
+				01PHUTPLAEXCODE00000006 /* PhutPlae */,
+				01PHUTPLAEXCODE00000007 /* PhutPlaeTests */,
+				01PHUTPLAEXCODE00000005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01PHUTPLAEXCODE00000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01PHUTPLAEXCODE00000008 /* PhutPlae.app */,
+				01PHUTPLAEXCODE00000009 /* PhutPlaeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01PHUTPLAEXCODE00000002 /* PhutPlae */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01PHUTPLAEXCODE00000011 /* Build configuration list for PBXNativeTarget "PhutPlae" */;
+			buildPhases = (
+				01PHUTPLAEXCODE00000022 /* Sources */,
+				01PHUTPLAEXCODE00000020 /* Frameworks */,
+				01PHUTPLAEXCODE00000023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				01PHUTPLAEXCODE00000006 /* PhutPlae */,
+			);
+			name = PhutPlae;
+			packageProductDependencies = (
+				01PHUTPLAEXCODE0000001B /* WhisperKit */,
+				01PHUTPLAEXCODE0000001C /* MLXLLM */,
+				01PHUTPLAEXCODE0000001D /* MLXLMCommon */,
+			);
+			productName = PhutPlae;
+			productReference = 01PHUTPLAEXCODE00000008 /* PhutPlae.app */;
+			productType = "com.apple.product-type.application";
+		};
+		01PHUTPLAEXCODE00000003 /* PhutPlaeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01PHUTPLAEXCODE00000012 /* Build configuration list for PBXNativeTarget "PhutPlaeTests" */;
+			buildPhases = (
+				01PHUTPLAEXCODE00000024 /* Sources */,
+				01PHUTPLAEXCODE00000021 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01PHUTPLAEXCODE00000025 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				01PHUTPLAEXCODE00000007 /* PhutPlaeTests */,
+			);
+			name = PhutPlaeTests;
+			packageProductDependencies = (
+			);
+			productName = PhutPlaeTests;
+			productReference = 01PHUTPLAEXCODE00000009 /* PhutPlaeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01PHUTPLAEXCODE00000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					01PHUTPLAEXCODE00000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					01PHUTPLAEXCODE00000003 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 01PHUTPLAEXCODE00000002;
+					};
+				};
+			};
+			buildConfigurationList = 01PHUTPLAEXCODE00000010 /* Build configuration list for PBXProject "PhutPlae" */;
+			developmentRegion = th;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				th,
+				Base,
+			);
+			mainGroup = 01PHUTPLAEXCODE00000004;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01PHUTPLAEXCODE00000019 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */,
+				01PHUTPLAEXCODE0000001A /* XCRemoteSwiftPackageReference "mlx-swift-lm" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 01PHUTPLAEXCODE00000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01PHUTPLAEXCODE00000002 /* PhutPlae */,
+				01PHUTPLAEXCODE00000003 /* PhutPlaeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01PHUTPLAEXCODE00000023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01PHUTPLAEXCODE00000022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01PHUTPLAEXCODE00000024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01PHUTPLAEXCODE00000025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01PHUTPLAEXCODE00000002 /* PhutPlae */;
+			targetProxy = 01PHUTPLAEXCODE00000026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		01PHUTPLAEXCODE00000026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01PHUTPLAEXCODE00000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01PHUTPLAEXCODE00000002;
+			remoteInfo = PhutPlae;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01PHUTPLAEXCODE00000008 /* PhutPlae.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhutPlae.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01PHUTPLAEXCODE00000009 /* PhutPlaeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhutPlaeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin XCBuildConfiguration section */
+		01PHUTPLAEXCODE00000013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		01PHUTPLAEXCODE00000014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01PHUTPLAEXCODE00000015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhutPlae/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "พูดแปล";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "พูดแปลใช้ไมโครโฟนเพื่อฟังเสียงพูดบนเครื่อง แล้วแปลและอ่านออกเสียง โดยไม่ส่งเสียงไปคลาวด์";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.phutplae.PhutPlae;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		01PHUTPLAEXCODE00000016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhutPlae/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "พูดแปล";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "พูดแปลใช้ไมโครโฟนเพื่อฟังเสียงพูดบนเครื่อง แล้วแปลและอ่านออกเสียง โดยไม่ส่งเสียงไปคลาวด์";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.phutplae.PhutPlae;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		01PHUTPLAEXCODE00000017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.phutplae.PhutPlaeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhutPlae.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhutPlae";
+			};
+			name = Debug;
+		};
+		01PHUTPLAEXCODE00000018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = app.phutplae.PhutPlaeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhutPlae.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhutPlae";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01PHUTPLAEXCODE00000010 /* Build configuration list for PBXProject "PhutPlae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01PHUTPLAEXCODE00000013 /* Debug */,
+				01PHUTPLAEXCODE00000014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01PHUTPLAEXCODE00000011 /* Build configuration list for PBXNativeTarget "PhutPlae" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01PHUTPLAEXCODE00000015 /* Debug */,
+				01PHUTPLAEXCODE00000016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01PHUTPLAEXCODE00000012 /* Build configuration list for PBXNativeTarget "PhutPlaeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01PHUTPLAEXCODE00000017 /* Debug */,
+				01PHUTPLAEXCODE00000018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01PHUTPLAEXCODE00000019 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/argmax-oss-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		01PHUTPLAEXCODE0000001A /* XCRemoteSwiftPackageReference "mlx-swift-lm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ml-explore/mlx-swift-lm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.21.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01PHUTPLAEXCODE0000001B /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01PHUTPLAEXCODE00000019 /* XCRemoteSwiftPackageReference "argmax-oss-swift" */;
+			productName = WhisperKit;
+		};
+		01PHUTPLAEXCODE0000001C /* MLXLLM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01PHUTPLAEXCODE0000001A /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLLM;
+		};
+		01PHUTPLAEXCODE0000001D /* MLXLMCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01PHUTPLAEXCODE0000001A /* XCRemoteSwiftPackageReference "mlx-swift-lm" */;
+			productName = MLXLMCommon;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 01PHUTPLAEXCODE00000001 /* Project object */;
+}
