@@ -36,16 +36,18 @@ final class AppState: ObservableObject, PipelinePresenting {
     private var modelsHeldInMemory = false
 
     init(
-        settings: UserSettings = UserSettings(),
-        downloads: ModelDownloadManager = ModelDownloadManager(),
+        settings: UserSettings? = nil,
+        downloads: ModelDownloadManager? = nil,
         transcriber: SpeechTranscribing = WhisperKitTranscriber(),
         translator: TranslationServicing? = nil,
         ser: SpeechEmotionRecognizing = CoreMLSpeechEmotionRecognizer(),
         synthesizer: SpeechSynthesizing = AVSpeechVoiceSynthesizer(),
         capture: MicrophoneCapturing = AVAudioEngineCapture()
     ) {
+        // Default arguments are nonisolated; construct MainActor types in this isolated body.
+        let settings = settings ?? UserSettings()
         self.settings = settings
-        self.downloads = downloads
+        self.downloads = downloads ?? ModelDownloadManager()
         self.transcriber = transcriber
         self.translator = translator ?? PairAwareTranslator(
             policy: settings.translatorPolicy,

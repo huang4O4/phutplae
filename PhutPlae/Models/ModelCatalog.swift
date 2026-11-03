@@ -68,7 +68,7 @@ enum TranslatorModelSize: String, CaseIterable, Identifiable, Sendable {
         }
     }
 
-    var extraEOSTokens: [String] {
+    var extraEOSTokens: Set<String> {
         switch promptFamily {
         case .llama3: return ["<|eot_id|>", "<|end_of_text|>"]
         case .qwen: return ["<|im_end|>"]
